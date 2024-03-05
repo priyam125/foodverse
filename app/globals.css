@@ -17,6 +17,10 @@ body {
   background: radial-gradient(#282c34, #282c34);
 }
 
+h1 {
+  @apply text-4xl font-bold;
+}
+
 .header-background {
   position: absolute;
   width: 100%;
