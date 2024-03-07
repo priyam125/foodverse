@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Montserrat } from "next/font/google";
+import ImageSlideshow from "@/components/images/image-slideshow";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -13,7 +14,9 @@ export default function Home() {
         id="header"
         className="flex justify-between gap-12 my-12 mx-auto w-[90%] max-w-[75rem]"
       >
-        <div id="slideshow" className="w-[40rem] h-[25rem]"></div>
+        <div id="slideshow" className="w-[40rem] h-[25rem]">
+          <ImageSlideshow />
+        </div>
         <div id="hero" className="space-y-4">
           <div className={`text-2xl text-[#ddd6cb] space-y-8`}>
             <h2
