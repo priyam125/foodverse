@@ -4,7 +4,7 @@ import MainHeader from "@/components/main-header/main-header";
 
 const quicksand = Quicksand({
   weight: ["400", "700"],
-  style: ["normal"],
+  style: "normal",
   subsets: ["latin"],
 });
 

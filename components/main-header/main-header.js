@@ -28,7 +28,7 @@ export default function mainHeader() {
           <ul className="list-none m-0 p-0 flex gap-6 text-xl">
             <li>
               <Link
-                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg"
+                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg hover:bg-gradient-to-r from-[#ff8a05] to-[#f9b331] hover:bg-clip-text hover:text-transparent"
                 href="/meals"
               >
                 Browse Meals
@@ -36,7 +36,7 @@ export default function mainHeader() {
             </li>
             <li>
               <Link
-                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg"
+                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg hover:bg-gradient-to-r from-[#ff8a05] to-[#f9b331] hover:bg-clip-text hover:text-transparent"
                 href="/community"
               >
                 Your Community
