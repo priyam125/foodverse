@@ -1,8 +1,8 @@
 import Link from "next/link";
 import logoImg from "@/assets/logo.png";
 import Image from "next/image";
-import classes from "./main-header.module.css";
 import MainHeaderBackground from "./main-header-background";
+import NavLink from "../navLink/navLink";
 
 export default function mainHeader() {
   return (
@@ -24,23 +24,13 @@ export default function mainHeader() {
           Foodverse
         </Link>
 
-        <nav className={classes.nav}>
+        <nav>
           <ul className="list-none m-0 p-0 flex gap-6 text-xl">
             <li>
-              <Link
-                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg hover:bg-gradient-to-r from-[#ff8a05] to-[#f9b331] hover:bg-clip-text hover:text-transparent"
-                href="/meals"
-              >
-                Browse Meals
-              </Link>
+              <NavLink href={"/meals"}>Browse Meals</NavLink>
             </li>
             <li>
-              <Link
-                className="no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-lg hover:bg-gradient-to-r from-[#ff8a05] to-[#f9b331] hover:bg-clip-text hover:text-transparent"
-                href="/community"
-              >
-                Your Community
-              </Link>
+              <NavLink href={"/community"}>Your Community</NavLink>
             </li>
           </ul>
         </nav>

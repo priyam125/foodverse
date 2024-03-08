@@ -1,5 +1,5 @@
-.nav a:hover,
-.nav a:active {
+.navlink:hover,
+.navlink:active {
   text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
 }
 
