@@ -26,7 +26,7 @@ export default async function MealsPage() {
         </p>
       </header>
       <main className={classes.main}>
-        <Suspense fallback={<p className="text-center">Loading...</p>}>
+        <Suspense fallback={<p className={classes.loading}>Loading...</p>}>
           <GetMeals />
         </Suspense>
       </main>
