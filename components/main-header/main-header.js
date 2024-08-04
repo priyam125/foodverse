@@ -8,7 +8,7 @@ export default function mainHeader() {
   return (
     <>
       <MainHeaderBackground />
-      <header className="flex justify-between items-center py-8 px-4 md:py-8 md:px-[10%]">
+      <header className="flex justify-between items-center py-8 pl-4 pr-1 md:py-8 md:px-[10%] space-x-12 md:space-x-0">
         <Link
           className="flex items-center justify-center gap-8 no-underline text-[#ddd6cb] font-bold tracking-[0.15rem] text-2xl uppercase"
           href="/"
@@ -21,11 +21,11 @@ export default function mainHeader() {
             height={100}
             priority
           />
-          Foodverse
+          <div className="hidden md:block">Foodverse</div>
         </Link>
 
         <nav>
-          <ul className="list-none m-0 p-0 flex gap-6 text-xl">
+          <ul className="list-none m-0 p-0 flex gap-0 md:gap-6 md:text-xl text-lg">
             <li>
               <NavLink href={"/meals"}>Browse Meals</NavLink>
             </li>

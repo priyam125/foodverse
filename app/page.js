@@ -12,18 +12,18 @@ export default function Home() {
     <>
       <header
         id="header"
-        className="flex justify-between gap-12 my-12 mx-auto w-[90%] max-w-[75rem]"
+        className="flex flex-col md:flex-row justify-between gap-12 my-12 mx-auto w-[90%] max-w-[75rem]"
       >
-        <div id="slideshow" className="w-[40rem] h-[25rem]">
+        <div id="slideshow" className="md:w-[40rem] w-[22rem] md:h-[25rem] h-[15rem]">
           <ImageSlideshow />
         </div>
         <div id="hero" className="space-y-4">
-          <div className={`text-2xl text-[#ddd6cb] space-y-8`}>
-            <h2
-              className={`${montserrat.className} tracking-[0.15rem] uppercase bg-gradient-to-r from-[#f9572a] to-[#ffc905] bg-clip-text text-transparent`}
+          <div className={`md:text-2xl text-xl text-[#ddd6cb] space-y-8`}>
+            <div
+              className={`${montserrat.className} md:text-[2rem] text-[1.5rem] font-bold tracking-[0.15rem] uppercase bg-gradient-to-r from-[#f9572a] to-[#ffc905] bg-clip-text text-transparent`}
             >
               Step into Foodverse
-            </h2>
+            </div>
             <p>Taste & share food from all over the world.</p>
           </div>
           <div className="flex text-2xl gap-4 items-center cta">
